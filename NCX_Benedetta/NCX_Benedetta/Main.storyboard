@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yZI-Gw-AzB">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Z58-bq-QTC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yZI-Gw-AzB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="AKA-FC-8rE">
+                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.80392156859999997" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rCU-fR-sDj" kind="relationship" relationship="rootViewController" id="swD-ea-6iR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnf-OR-HK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292.30769230769232" y="-165.63981042654027"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Afx-tG-iOV">
+            <objects>
+                <viewController id="rCU-fR-sDj" customClass="ViewController" customModule="ProvaNCX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wSl-L7-b9L">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tent" translatesAutoresizingMaskIntoConstraints="NO" id="288-Hj-BcN">
+                                <rect key="frame" x="16" y="273" width="255" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="Tww-jy-hCE"/>
+                                    <constraint firstAttribute="height" constant="128" id="l6T-UR-URh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="p1r-qJ-Wpk"/>
+                                </constraints>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukm-FG-rB0">
+                                <rect key="frame" x="259" y="301" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6SZ-98-X50"/>
+                                    <constraint firstAttribute="height" constant="100" id="Kpp-Hg-XbE"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="5aL-r1-yP4" kind="embed" destinationCreationSelector="segueToFireAnimation:" id="1wW-TE-0Nw"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97b-xS-zkB">
+                                <rect key="frame" x="216" y="91" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="3AI-SZ-2XM"/>
+                                    <constraint firstAttribute="width" constant="110" id="gpi-dj-6ew"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="OBO-MW-cJa" kind="embed" destinationCreationSelector="segueToMoonAnimation:" id="tEC-P8-yx3"/>
+                                </connections>
+                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2Oh-AT-Qxc">
+                                <rect key="frame" x="16" y="465" width="358" height="125"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzP-ei-3Xd">
+                                        <rect key="frame" x="0.0" y="0.0" width="203" height="32"/>
+                                        <string key="text">Camp-tastic! 
+</string>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="32"/>
+                                        <color key="textColor" red="0.45882352939999999" green="0.72156862749999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/kæmp-tas-tic/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWt-oc-WH0">
+                                        <rect key="frame" x="0.0" y="48" width="113.66666666666667" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.45882352939999999" green="0.72156862749999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“the most wonderful, awe-inspiring and simply fantastic camping experiences”" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htb-ZX-7gK">
+                                        <rect key="frame" x="0.0" y="84.333333333333371" width="357.33333333333331" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.80392156859999997" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ne-3Q-6ia" customClass="GetStartedButton" customModule="ProvaNCX" customModuleProvider="target">
+                                <rect key="frame" x="50" y="714" width="290" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="etn-gH-6bo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Started!">
+                                    <color key="baseForegroundColor" red="0.80392156862745101" green="0.92156862745098034" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ABZ-HO-oBN" kind="show" id="Ykg-um-Rzq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1pS-6T-qoq"/>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.23529411759999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Ne-3Q-6ia" firstAttribute="leading" secondItem="1pS-6T-qoq" secondAttribute="leading" constant="50" id="Evz-jt-oxg"/>
+                            <constraint firstItem="1pS-6T-qoq" firstAttribute="trailing" secondItem="2Oh-AT-Qxc" secondAttribute="trailing" constant="16" id="IdT-Oe-dKi"/>
+                            <constraint firstItem="1pS-6T-qoq" firstAttribute="trailing" secondItem="9Ne-3Q-6ia" secondAttribute="trailing" constant="50" id="LZ7-Hb-zkv"/>
+                            <constraint firstItem="1pS-6T-qoq" firstAttribute="trailing" secondItem="97b-xS-zkB" secondAttribute="trailing" constant="64" id="NgP-DF-uPz"/>
+                            <constraint firstItem="Ukm-FG-rB0" firstAttribute="top" secondItem="wSl-L7-b9L" secondAttribute="top" constant="301" id="QIF-2x-x5V"/>
+                            <constraint firstItem="288-Hj-BcN" firstAttribute="top" secondItem="97b-xS-zkB" secondAttribute="bottom" constant="72" id="RSZ-lZ-Gig"/>
+                            <constraint firstItem="288-Hj-BcN" firstAttribute="leading" secondItem="1pS-6T-qoq" secondAttribute="leading" constant="16" id="Zyy-Wy-lby"/>
+                            <constraint firstItem="2Oh-AT-Qxc" firstAttribute="leading" secondItem="1pS-6T-qoq" secondAttribute="leading" constant="16" id="bXe-JY-DOP"/>
+                            <constraint firstItem="288-Hj-BcN" firstAttribute="top" secondItem="wSl-L7-b9L" secondAttribute="top" constant="273" id="bfx-ik-gG1"/>
+                            <constraint firstItem="1pS-6T-qoq" firstAttribute="trailing" secondItem="288-Hj-BcN" secondAttribute="trailing" constant="119" id="fah-Ye-d7F"/>
+                            <constraint firstItem="288-Hj-BcN" firstAttribute="bottom" secondItem="Ukm-FG-rB0" secondAttribute="bottom" id="hEX-uW-1JC"/>
+                            <constraint firstItem="Ukm-FG-rB0" firstAttribute="leading" secondItem="1pS-6T-qoq" secondAttribute="leading" constant="259" id="idB-8w-ObK"/>
+                            <constraint firstItem="2Oh-AT-Qxc" firstAttribute="top" secondItem="288-Hj-BcN" secondAttribute="bottom" constant="64" id="n4D-qs-ABt"/>
+                            <constraint firstItem="97b-xS-zkB" firstAttribute="leading" secondItem="1pS-6T-qoq" secondAttribute="leading" constant="216" id="rgF-Qt-Mwy"/>
+                            <constraint firstItem="1pS-6T-qoq" firstAttribute="trailing" secondItem="Ukm-FG-rB0" secondAttribute="trailing" constant="31" id="vu3-vS-lqW"/>
+                            <constraint firstItem="1pS-6T-qoq" firstAttribute="bottom" secondItem="9Ne-3Q-6ia" secondAttribute="bottom" constant="56" id="wnO-AK-RKI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="l7Y-0X-ble"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r3o-mi-ndm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636.92307692307691" y="-165.63981042654027"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="uuj-sI-pRZ">
+            <objects>
+                <hostingController id="5aL-r1-yP4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMl-3Q-Nye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="-155"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="VBs-SX-zCl">
+            <objects>
+                <hostingController id="OBO-MW-cJa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZM-1F-CyW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1377" y="-431"/>
+        </scene>
+        <!--Get Started!-->
+        <scene sceneID="4ue-sC-e2d">
+            <objects>
+                <viewController id="ABZ-HO-oBN" customClass="SignUpViewController" customModule="ProvaNCX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oRR-36-E4y">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Li-O6-sR3">
+                                <rect key="frame" x="145" y="635" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BzP-zN-vDd"/>
+                                    <constraint firstAttribute="width" constant="100" id="q2K-AS-8Cu"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="NKW-po-ZmL" kind="embed" destinationCreationSelector="segueToFireAnimation2:" id="4Wv-1S-Vo4"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvO-NP-QGY" customClass="GetStartedButton" customModule="ProvaNCX" customModuleProvider="target">
+                                <rect key="frame" x="50" y="375" width="290" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PYA-UX-k3u"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                    <color key="baseForegroundColor" red="0.80392156859999997" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BA-nU-ifm" customClass="GetStartedButton" customModule="ProvaNCX" customModuleProvider="target">
+                                <rect key="frame" x="50" y="430" width="290" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HWo-ZM-L9j"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Signup">
+                                    <color key="baseForegroundColor" red="0.80392156859999997" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pqm-IK-baR"/>
+                        <color key="backgroundColor" red="0.098039215686274508" green="0.23529411764705882" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8BA-nU-ifm" firstAttribute="leading" secondItem="pqm-IK-baR" secondAttribute="leading" constant="50" id="0c5-4d-0Tf"/>
+                            <constraint firstItem="8BA-nU-ifm" firstAttribute="trailing" secondItem="GvO-NP-QGY" secondAttribute="trailing" id="54Q-UJ-e7m"/>
+                            <constraint firstItem="8BA-nU-ifm" firstAttribute="centerX" secondItem="2Li-O6-sR3" secondAttribute="centerX" id="FxH-qi-vXr"/>
+                            <constraint firstItem="2Li-O6-sR3" firstAttribute="centerX" secondItem="oRR-36-E4y" secondAttribute="centerX" id="UBu-Zq-gDJ"/>
+                            <constraint firstItem="8BA-nU-ifm" firstAttribute="leading" secondItem="GvO-NP-QGY" secondAttribute="leading" id="W9f-Hh-VjF"/>
+                            <constraint firstAttribute="bottom" secondItem="8BA-nU-ifm" secondAttribute="bottom" constant="374" id="eHs-IJ-1vl"/>
+                            <constraint firstItem="8BA-nU-ifm" firstAttribute="top" secondItem="GvO-NP-QGY" secondAttribute="bottom" constant="15" id="l2Y-qm-xyX"/>
+                            <constraint firstItem="pqm-IK-baR" firstAttribute="bottom" secondItem="2Li-O6-sR3" secondAttribute="bottom" constant="75" id="lkC-pa-PwX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Get Started!" id="sUR-FZ-kTH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4lX-1y-ONx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636.92307692307691" y="715.87677725118476"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="bP5-vZ-Ssf">
+            <objects>
+                <hostingController id="NKW-po-ZmL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d1a-la-xtc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687" y="598"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tent" width="1803" height="1072"/>
+    </resources>
+</document>
