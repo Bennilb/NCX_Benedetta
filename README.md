@@ -1,7 +1,8 @@
-# Learn how to use UIKit and integrate SwiftUI animations.
+# Purpose of this project: learn 
+## How to use UIKit and integrate SwiftUI animations.
 
 ### Description
-This project is an iOS app that showcases animations created using both UIKit and SwiftUI. The project includes two different animations: "FireAnimation" and "MoonAnimation." Both animations use SwiftUI for the interface, storyboard, and animations, but the core functionality is written in UIKit.
+This project is an example of how to integrate SwiftUI animations into a UIKit project. It consists of two interfaces created in UIKit with SwiftUI animations embedded within them. The animations are static and loop continuously on the interface. Both animations use SwiftUI for the interface, storyboard, and animations, but the core functionality is written in UIKit.
 
 ## Getting Started
 ### Installation
