@@ -1,9 +1,10 @@
 //
 //  FireAnimation.swift
-//  ProvaNCX
+//  NCX_Benedetta
 //
-//  Created by benedetta on 28/03/23.
+//  Created by benedetta on 29/03/23.
 //
+
 import SwiftUI
 
 struct FireAnimation: View {

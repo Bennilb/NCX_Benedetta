@@ -11,10 +11,11 @@
 		D37C4B0329D436FE00E7268D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37C4AF929D436FE00E7268D /* Main.storyboard */; };
 		D37C4B0529D436FE00E7268D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37C4AFB29D436FE00E7268D /* Assets.xcassets */; };
 		D37C4B0629D436FE00E7268D /* GetStartedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C4AFC29D436FE00E7268D /* GetStartedButton.swift */; };
-		D37C4B0729D436FE00E7268D /* SwiftUIelements in Resources */ = {isa = PBXBuildFile; fileRef = D37C4AFD29D436FE00E7268D /* SwiftUIelements */; };
 		D37C4B0829D436FE00E7268D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C4AFE29D436FE00E7268D /* AppDelegate.swift */; };
 		D37C4B0A29D436FE00E7268D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C4B0029D436FE00E7268D /* ViewController.swift */; };
 		D37C4B0C29D436FE00E7268D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C4B0229D436FE00E7268D /* SceneDelegate.swift */; };
+		D37C4B3E29D43A1900E7268D /* FireAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C4B3D29D43A1900E7268D /* FireAnimation.swift */; };
+		D37C4B4029D43A4800E7268D /* MoonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C4B3F29D43A4800E7268D /* MoonAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +25,11 @@
 		D37C4AF929D436FE00E7268D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D37C4AFB29D436FE00E7268D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D37C4AFC29D436FE00E7268D /* GetStartedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStartedButton.swift; sourceTree = "<group>"; };
-		D37C4AFD29D436FE00E7268D /* SwiftUIelements */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftUIelements; sourceTree = "<group>"; };
 		D37C4AFE29D436FE00E7268D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D37C4B0029D436FE00E7268D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D37C4B0229D436FE00E7268D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D37C4B3D29D43A1900E7268D /* FireAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAnimation.swift; sourceTree = "<group>"; };
+		D37C4B3F29D43A4800E7268D /* MoonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +64,24 @@
 			children = (
 				D37C4AFE29D436FE00E7268D /* AppDelegate.swift */,
 				D37C4B0229D436FE00E7268D /* SceneDelegate.swift */,
-				D37C4AFC29D436FE00E7268D /* GetStartedButton.swift */,
 				D37C4B0029D436FE00E7268D /* ViewController.swift */,
-				D37C4AFD29D436FE00E7268D /* SwiftUIelements */,
+				D37C4AFC29D436FE00E7268D /* GetStartedButton.swift */,
+				D37C4B4129D43A6F00E7268D /* SwiftUIAnimations */,
 				D37C4AF929D436FE00E7268D /* Main.storyboard */,
 				D37C4AFB29D436FE00E7268D /* Assets.xcassets */,
 				D35457EC29D182BA00993E50 /* LaunchScreen.storyboard */,
 				D35457EF29D182BA00993E50 /* Info.plist */,
 			);
 			path = NCX_Benedetta;
+			sourceTree = "<group>";
+		};
+		D37C4B4129D43A6F00E7268D /* SwiftUIAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				D37C4B3D29D43A1900E7268D /* FireAnimation.swift */,
+				D37C4B3F29D43A4800E7268D /* MoonAnimation.swift */,
+			);
+			path = SwiftUIAnimations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +146,6 @@
 				D35457EE29D182BA00993E50 /* LaunchScreen.storyboard in Resources */,
 				D37C4B0529D436FE00E7268D /* Assets.xcassets in Resources */,
 				D37C4B0329D436FE00E7268D /* Main.storyboard in Resources */,
-				D37C4B0729D436FE00E7268D /* SwiftUIelements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +160,8 @@
 				D37C4B0C29D436FE00E7268D /* SceneDelegate.swift in Sources */,
 				D37C4B0829D436FE00E7268D /* AppDelegate.swift in Sources */,
 				D37C4B0629D436FE00E7268D /* GetStartedButton.swift in Sources */,
+				D37C4B3E29D43A1900E7268D /* FireAnimation.swift in Sources */,
+				D37C4B4029D43A4800E7268D /* MoonAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
