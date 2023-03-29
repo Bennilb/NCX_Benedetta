@@ -12,8 +12,7 @@ https://github.com/Bennilb/NCX_Benedetta.git
 * Open the project in Xcode.
 
 ## Screenshots
-![ScreenShot1](https://user-images.githubusercontent.com/113519450/228649893-991eac1b-3655-4e84-803c-9cb0852c4580.png)
-![ScreenShot2](https://user-images.githubusercontent.com/113519450/228649908-4cecf509-26e6-4e70-9928-deafaaefba28.png)
+<img src="https://user-images.githubusercontent.com/113519450/228649893-991eac1b-3655-4e84-803c-9cb0852c4580.png" alt="ScreenShot1" width="200">    <img src="https://user-images.githubusercontent.com/113519450/228649908-4cecf509-26e6-4e70-9928-deafaaefba28.png" alt="ScreenShot2" width="200">
 
 ## Code
 The following code shows how to __integrate__ the SwiftUI animations within the UIKit interfaces:
